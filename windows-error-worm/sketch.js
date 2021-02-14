@@ -3,6 +3,7 @@ let dimY = window.innerHeight
 
 let img = [];
 let currImage = 0;
+
 function setup() {
   frameRate(120)
   createCanvas(dimX, dimY);
@@ -43,5 +44,13 @@ function showText(){
   textSize(25)
   text("Press 's' to change the image", dimX/2 - 200, dimY/2+30)
   text("Press 'r' to erase the worm", dimX/2 - 200, dimY/2+60)
-  text("@_yasboy on Twitter", dimX/2 - 200, dimY/2+90)
+}
+
+document.querySelector('.task[data-operation="changewindow"]').onclick = function(){
+  currImage = (currImage+1)%img.length
+}
+
+document.querySelector('.task[data-operation="eraseworm"]').onclick = function(){
+  resizeCanvas(dimX, dimY)
+  showText()
 }

@@ -6,9 +6,40 @@
     <title>Windows XP Error Worm - @_yasboy on twitter</title>
   </head>
   <body>
+
+    <table class="task-bar">
+      <td class="start-menu"></td>
+      <td class="tasks">
+        <div class="task" data-operation="changewindow">
+          <span class="icon"></span>
+          <span class="task-text">Change Window</span>
+        </div>
+        <div class="task" data-operation="eraseworm">
+          <span class="icon"></span>
+          <span class="task-text">Erase Worm</span>
+        </div>
+      </td>
+      <td class="notifications"></td>
+    </table>
     <script src="p5.js"></script>
     <script src="sketch.js"></script>
-  
+    <script type="text/javascript">
+      function updateTime(){
+        var date = new Date()
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0'+minutes : minutes;
+        var strTime = hours + ':' + minutes + ' ' + ampm;
+        return strTime;
+      }
+      document.querySelector(".notifications").innerText = updateTime()
+      setInterval(function(){
+        document.querySelector(".notifications").innerText = updateTime()
+      }, 1000*60)
+    </script>
 
   </body>
 </html>

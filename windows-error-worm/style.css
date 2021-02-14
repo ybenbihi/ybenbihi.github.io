@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "MS Sans Serif";
+  src: url("ms_sans_serif.ttf") format("ttf"),
+         url("ms_sans_serif.woff") format("woff");
+ }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -10,4 +16,61 @@ body{
 }
 canvas {
   display: block;
+}
+table{
+  border-collapse: collapse;
+}
+.task-bar{
+  height:26px;
+  background:url("taskbar-mid-bg.png");
+  position: absolute;
+  bottom:0;
+  width: 100vw;
+}
+.start-menu{
+  background: url("startbutton.png");
+  height:26px;
+  width: 98px;
+}
+.start-menu:hover{
+  background-position: 0px -30px;
+}
+.start-menu:active{
+  background-position: 0px -60px;
+}
+.notifications{
+  background: url("taskbar-right-bg.png");
+  height:26px;
+  color:white;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size:10px;
+  width:80px;
+  text-align: right;
+  padding-right:10px;
+}
+.task{
+  display:inline-block;
+  background: url("xptb_btn2.gif");
+  width:148px;
+  height: 25px;
+}
+.task:hover{
+  background: url("xptb_btn2o.gif");
+}
+.icon{
+  display: inline-block;
+  background: url("ie.gif");
+  position: relative;
+  top:5px;
+  left:5px;
+  width:16px;
+  height:16px;
+}
+.task-text{
+  position: relative;
+  color:white;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size:10px;
+  left:10px;
+  top:1px;
 }
