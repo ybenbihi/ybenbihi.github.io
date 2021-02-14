@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Windows XP Error Worm - @_yasboy on twitter</title>
+    <title>Windows XP Error Worm</title>
   </head>
   <body>
 
@@ -23,7 +23,10 @@
     </table>
     <script src="p5.js"></script>
     <script src="sketch.js"></script>
+    <script src="bodyScrollLock.js"></script>
     <script type="text/javascript">
+      const targetElement = document.querySelector('body');
+      bodyScrollLock.disableBodyScroll(targetElement);
       function updateTime(){
         var date = new Date()
         var hours = date.getHours();
