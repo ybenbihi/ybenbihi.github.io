@@ -1,1 +1,67 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>COLERP GAME</title><link rel="stylesheet" href="index.0ae6f866.css"><link rel="stylesheet" href="index.bcd5edd7.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"></head><body> <div id="overlay"> <h1>Nice !</h1> <div class="colors"> <div id="result-color" style="background-color:#00f"></div> <div id="target-color" style="background-color:red"></div> </div> <h3>Score : 94/100</h3> </div> <header class="neumorphic"> <div id="header-top"> <h1 id="logo">COLERP GAME</h1> <a id="menu-button" href="javascript:;" onclick="this.parentNode.parentNode.classList.toggle('opened');"><div id="menu-icon" class="material-symbols-outlined">menu</div></a> </div> <nav id="menu"> <ul> <li class="difficulty selected" id="difficulty-easy"><a href="javascript:;" onclick="changeDifficulty('easy');">EASY</a></li> <li class="difficulty" id="difficulty-hard"><a href="javascript:;" onclick="changeDifficulty('hard');">HARD</a></li> </ul> </nav> <div class="footer"> Made by <a href="https://github.com/ybenbihi">ybenbihi</a><br> You like the game ? <a href="https://www.buymeacoffee.com/yasboy">Support me</a> </div> </header> <main> <div id="color-boxes" class="neumorphic"> <div class="color-box" style="background-color:#0ff"></div> <div class="color-box" style="background-color:#7fffd4"></div> <div class="color-box" style="background-color:coral" id="result-box"></div> <div class="color-box" style="background-color:olive"></div> <div class="color-box" style="background-color:#556b2f"></div> </div> <div id="colorpicker" class="neumorphic"> <div id="range-groups"> <div class="range-group"> <label for="range-1">Red</label> <input type="range" min="0" max="255" value="0" class="red slider" name="range-1" id="range-1"> </div> <div class="range-group"> <label for="range-2">Green</label> <input type="range" min="0" max="255" value="0" class="green slider" name="range-2" id="range-2"> </div> <div class="range-group"> <label for="range-3">Blue</label> <input type="range" min="0" max="255" value="0" class="blue slider" name="range-3" id="range-3"> </div> </div> <button id="check-color" onclick="checkScore();">Check</button> </div> </main> <script src="index.ba84d42b.js"></script> <script src="index.7dab6d15.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLERP GAME</title>
+    <link rel="stylesheet" href="index.ce12ebcb.css">
+    <link rel="stylesheet" href="index.4984adcc.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+<body>
+    <div id="overlay">
+        <h1>Nice !</h1>
+        <div class="colors">
+            <div id="result-color" style="background-color: #00f"></div>
+            <div id="target-color" style="background-color: red"></div>
+        </div>
+        <h3>Score : 94/100</h3>
+    </div>
+    <header class="neumorphic">
+        <div id="header-top">
+            <h1 id="logo">COLERP GAME</h1>
+            <a id="menu-button" href="javascript:;" onclick="this.parentNode.parentNode.classList.toggle('opened');"><div id="menu-icon" class="material-symbols-outlined">menu</div></a>    
+        </div>
+        
+        <nav id="menu">
+            <ul>
+                <li class="difficulty selected" id="difficulty-easy"><a href="javascript:;" onclick="changeDifficulty('easy');">EASY</a></li>
+                <li class="difficulty" id="difficulty-hard"><a href="javascript:;" onclick="changeDifficulty('hard');">HARD</a></li>
+            </ul>
+        </nav>
+        <div class="footer">
+            Made by <a href="https://github.com/ybenbihi">ybenbihi</a><br>
+            You like the game ? <a href="https://www.buymeacoffee.com/yasboy">Support me</a>
+        </div>
+    </header>
+    <main>
+        <div id="color-boxes" class="neumorphic">
+            <div class="color-box" style="background-color: #0ff"></div>
+            <div class="color-box" style="background-color: #7fffd4"></div>
+            <div class="color-box" style="background-color: coral" id="result-box"></div>
+            <div class="color-box" style="background-color: olive"></div>
+            <div class="color-box" style="background-color: #556b2f"></div>
+        </div>
+        <div id="colorpicker" class="neumorphic">
+            <div id="range-groups">
+                <div class="range-group">
+                    <label for="range-1">Red</label>
+                    <input type="range" min="0" max="255" value="0" class="slider red" name="range-1" id="range-1">
+                </div>
+                <div class="range-group">
+                    <label for="range-2">Green</label>
+                    <input type="range" min="0" max="255" value="0" class="slider green" name="range-2" id="range-2">
+                </div>
+                <div class="range-group">
+                    <label for="range-3">Blue</label>
+                    <input type="range" min="0" max="255" value="0" class="slider blue" name="range-3" id="range-3">
+                </div>
+            </div>
+            <button id="check-color" onclick="checkScore();">Check</button>
+        </div>
+    </main>
+
+    <script src="index.167bf8b9.js"></script>
+    <script src="index.c3839b43.js"></script>
+</body>
+</html>
