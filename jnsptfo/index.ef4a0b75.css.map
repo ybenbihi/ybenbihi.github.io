@@ -1,1 +1,0 @@
-{"mappings":"AAAA","sources":["src/css/images.scss"],"sourcesContent":["#twitter-logo {\r\n    width: 25vw;\r\n    height: auto;\r\n    position: absolute;\r\n    clip-path: url(\"../assets/images/twitter-logo.svg#logo\");\r\n}"],"names":[],"version":3,"file":"index.ef4a0b75.css.map","sourceRoot":"/__parcel_source_root/"}
